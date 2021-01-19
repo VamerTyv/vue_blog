@@ -4,7 +4,7 @@ const devEnv = require('./dev.env')
 
 module.exports = merge(devEnv, {
   NODE_ENV: '"testing"',
-  API_ROOT: '"http://127.0.0.1/api"',
+  API_ROOT: '"http://127.0.0.1"',
   HOST: '"Http://127.0.0.1"',
-  PORT: "8081"
+  PORT: 8081
 })
