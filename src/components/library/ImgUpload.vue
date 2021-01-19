@@ -2,7 +2,7 @@
   <el-upload
     class="img-upload"
     ref="upload"
-    action="http://localhost:8843/api/covers"
+    :action="actionUrl"
     :on-preview="handlePreview"
     :on-remove="handleRemove"
     :before-remove="beforeRemove"
@@ -22,7 +22,8 @@ export default {
   data () {
     return {
       fileList: [],
-      url: ''
+      url: '',
+      actionUrl: this.apiURL
     }
   },
   methods: {
