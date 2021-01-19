@@ -17,19 +17,19 @@
 </template>
 
 <script>
-  export default {
-    name: 'NavMenu',
-    data () {
-      return {
-        navList: [
-          {name: '/index', navItem: '首页'},
-          {name: '/jotter', navItem: '笔记本'},
-          {name: '/library', navItem: '图书馆'},
-          {name: '/admin', navItem: '个人中心'}
-        ]
-      }
+export default {
+  name: 'NavMenu',
+  data () {
+    return {
+      navList: [
+        {name: '/index', navItem: '首页'},
+        {name: '/jotter', navItem: '笔记本'},
+        {name: '/library', navItem: '图书馆'},
+        {name: '/admin', navItem: '个人中心'}
+      ]
     }
   }
+}
 </script>
 
 <style scoped>
@@ -41,4 +41,3 @@
     pointer-events: none;
   }
 </style>
-

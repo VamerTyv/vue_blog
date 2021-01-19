@@ -36,20 +36,20 @@
 </template>
 
 <script>
-  export default {
-    name: 'SideMenu',
-    data () {
-      return {
-        cid: ''
-      }
-    },
-    methods: {
-      handleSelect (key, keyPath) {
-        this.cid = key
-        this.$emit('indexSelect')
-      }
+export default {
+  name: 'SideMenu',
+  data () {
+    return {
+      cid: ''
+    }
+  },
+  methods: {
+    handleSelect (key, keyPath) {
+      this.cid = key
+      this.$emit('indexSelect')
     }
   }
+}
 </script>
 
 <style scoped>
@@ -61,4 +61,3 @@
     width: 150px;
   }
 </style>
-
